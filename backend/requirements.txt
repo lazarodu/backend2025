@@ -1,0 +1,14 @@
+# Core
+python-dotenv>=1.1.0
+
+# Testes
+pytest>=8.4.0
+pytest-cov>=6.2.1
+
+fastapi>=0.115.12
+uvicorn>=0.34.3
+pydantic>=2.11.7
+
+python-jose[cryptography]
+passlib[bcrypt]
+fastapi[all]

@@ -1,0 +1,20 @@
+{
+  "name": "Blog API Dev",
+  "context": "..",
+  "dockerFile": "../Dockerfile",
+  "workspaceFolder": "/home/devuser/app",
+  "remoteUser": "devuser",
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "python.defaultInterpreterPath": "/usr/local/bin/python"
+  },
+  "mounts": [
+    "source=${localWorkspaceFolder}/backend,target=/home/devuser/app,type=bind"
+  ],
+  "postCreateCommand": "pip install -r requirements.txt",
+  "extensions": [
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "ms-vscode.makefile-tools"
+  ]
+}

@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  blog:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    command: ["pytest", "--maxfail=1", "--disable-warnings", "-v"]
